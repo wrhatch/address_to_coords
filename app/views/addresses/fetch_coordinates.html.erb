@@ -1,11 +1,18 @@
 <h1>Coordinates Lookup</h1>
 
+<form>
+  <div>
+    <label for="the_address">Address:</label>
+    <input id="the_address" type="text" name="address">
+  </div>
+  <div>
+    <input type="submit" value="Get Coordinates">
+  </div>
+</form>
+
 <dl>
   <dt>Address:</dt>
   <dd><%= @address %></dd>
-
-  <dt>URL Safe Address:</dt>
-  <dd><%= @url_safe_address %></dd>
 
   <dt>Latitude:</dt>
   <dd><%= @latitude %></dd>
